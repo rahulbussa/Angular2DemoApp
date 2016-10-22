@@ -1,0 +1,20 @@
+<md-card *ngIf="contact">
+  <md-card-header>
+      <img md-card-avatar [src]="contact.avatar">
+      <md-card-title>{{contact.first_name+" "+contact.last_name }}</md-card-title>
+      <md-card-subtitle>-Primary</md-card-subtitle>  
+  </md-card-header>    
+  <md-card-content>
+    <div>
+        Mobile No:{{contact.phone}}    
+    </div>
+    <div>
+        Email: {{contact.email}}
+    </div>
+  </md-card-content>
+  <md-card-actions align="end">
+      <button md-icon-button color="primary" >
+        <i class="material-icons">edit</i>
+      </button>
+  </md-card-actions>
+</md-card>
